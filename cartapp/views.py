@@ -9,8 +9,7 @@ from stripe_pay.settings import STRIPE_API_KEY
 
 class ItemList(ListView):
     model = Item
-    context_object_name = 'items'   # ваше собственное имя переменной контекста в шаблоне
-    # queryset = Book.objects.filter(title__icontains='war')[:5] # Получение 5 книг, содержащих слово 'war' в заголовке
+    context_object_name = 'items'
     template_name = 'cartapp/item_list.html'
 
 
